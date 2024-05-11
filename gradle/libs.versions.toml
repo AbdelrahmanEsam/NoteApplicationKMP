@@ -1,0 +1,60 @@
+[versions]
+composeCompiler = "1.5.11"
+androidxComposeBom = "2024.04.00"
+agp = "8.3.1"
+androidx-material = "1.6.5"
+foundation = "1.6.5"
+koin = "3.5.4"
+koinKsp = "1.3.1"
+kotlinx-coroutines-core = "1.8.0"
+kotlinx-datetime = "0.4.1"
+lifecycle-viewmodel = "2.8.0-alpha04"
+navigation-compose = "2.8.0-alpha06"
+material = "1.11.0"
+sqlite-driver = "2.0.0"
+statelyCommon = "2.0.5"
+ui = "1.6.5"
+kotlinVersion = "1.9.23"
+kotlinParcelize = "1.9.23"
+sqldelight = "2.0.1"
+ksp = "1.9.23-1.0.19"
+androidNavigation = "2.7.7"
+skie = "0.6.2"
+
+
+
+[libraries]
+android-driver = { module = "app.cash.sqldelight:android-driver", version.ref = "sqlite-driver" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "androidxComposeBom" }
+androidx-activity-compose = { module = "androidx.activity:activity-compose" }
+androidx-foundation = { module = "androidx.compose.foundation:foundation", version.ref = "foundation" }
+androidx-lifecycle-viewmodel = { module = "androidx.lifecycle:lifecycle-viewmodel", version.ref = "lifecycle-viewmodel" }
+androidx-material = { module = "androidx.compose.material:material", version.ref = "androidx-material" }
+androidx-navigation-compose = { module = "androidx.navigation:navigation-compose", version.ref = "navigation-compose" }
+androidx-ui = { module = "androidx.compose.ui:ui", version.ref = "ui" }
+androidx-ui-tooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "ui" }
+androidx-ui-tooling-preview = { module = "androidx.compose.ui:ui-tooling-preview", version.ref = "ui" }
+koin-core = { module = "io.insert-koin:koin-core", version.ref = "koin" }
+koin-android = { module = "io.insert-koin:koin-android", version.ref = "koin" }
+koin-compose = { module = "io.insert-koin:koin-androidx-compose", version.ref = "koin" }
+koin-ksp = { module = "io.insert-koin:koin-ksp-compiler", version.ref = "koinKsp" }
+sqldelight-coroutines-extensions = { module = "app.cash.sqldelight:coroutines-extensions", version.ref = "sqlite-driver" }
+kotlinx-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "kotlinx-coroutines-core" }
+kotlinx-datetime = { module = "org.jetbrains.kotlinx:kotlinx-datetime", version.ref = "kotlinx-datetime" }
+native-driver = { module = "app.cash.sqldelight:native-driver", version.ref = "sqlite-driver" }
+stately-common = { module = "co.touchlab:stately-common", version.ref = "statelyCommon" }
+touchlab-skie-configuration-annotations = { module = "co.touchlab.skie:configuration-annotations" , version.ref = "skie"}
+androidx-lifecycle-runtime-compose = { group = "androidx.lifecycle", name = "lifecycle-runtime-compose" }
+androidx-navigation-runtime-ktx = { module = "androidx.navigation:navigation-runtime-ktx", version.ref = "androidNavigation" }
+
+
+[plugins]
+com-android-application = { id = "com.android.application", version.ref = "agp" }
+com-android-library = { id = "com.android.library", version.ref = "agp" }
+kotlin-multiplatform = { id = "org.jetbrains.kotlin.multiplatform", version.ref = "kotlinVersion" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlinVersion" }
+kotlin-parcelize = { id = "org.jetbrains.kotlin.plugin.parcelize", version.ref = "kotlinParcelize" }
+app-cash-sqldelight = { id = "app.cash.sqldelight", version.ref = "sqldelight" }
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
+touchlab-skie = { id = "co.touchlab.skie", version.ref = "skie" }
+[bundles]
