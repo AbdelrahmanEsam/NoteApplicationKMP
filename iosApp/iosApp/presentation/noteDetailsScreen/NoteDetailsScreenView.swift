@@ -12,6 +12,8 @@ struct NoteDetailsScreenView: View {
 
     @Environment(\.presentationMode) var presentationMode:Binding<PresentationMode>
 
+
+//todo koin is incompatible with androidx viewModel
     var viewModel : NoteDetailsViewModel = inject()
     
     

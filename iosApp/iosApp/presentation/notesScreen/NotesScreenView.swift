@@ -10,6 +10,7 @@ import SwiftUI
 import shared
 struct NotesScreenView: View {
 
+//todo koin is incompatible with androidx viewModel
     @State var viewModel : NotesViewModel = inject()
     
     var body: some View {
